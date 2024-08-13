@@ -8,8 +8,8 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         Curso curso1 = new Curso();
-        curso1.setTitulo("curso java");
-        curso1.setDescricao("descrição curso java");
+        curso1.setTitulo("curso C#");
+        curso1.setDescricao("descrição curso C#");
         curso1.setCargaHoraria(8);
 
         Curso curso2 = new Curso();
@@ -33,16 +33,16 @@ public class Main {
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
 
-        Dev devCamila = new Dev();
-        devCamila.setNome("Camila");
-        devCamila.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        devCamila.progredir();
-        devCamila.progredir();
+        Dev devGustavo = new Dev();
+        devGustavo.setNome("Gustavo");
+        devGustavo.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Gustavo:" + devGustavo.getConteudosInscritos());
+        devGustavo.progredir();
+        devGustavo.progredir();
         System.out.println("-");
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
-        System.out.println("XP:" + devCamila.calcularTotalXp());
+        System.out.println("Conteúdos Inscritos Gustavo:" + devGustavo.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos Gustavo:" + devGustavo.getConteudosConcluidos());
+        System.out.println("XP:" + devGustavo.calcularTotalXp());
 
         System.out.println("-------");
 
